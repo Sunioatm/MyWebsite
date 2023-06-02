@@ -86,9 +86,13 @@ const ProfileScreen = () => {
             value={confirmPassword}
             onChange={(e) => setConfirmPassword(e.target.value)}
           ></Form.Control>
+          <Form.Label style={{ color: 'lightgray' }}>But it can't update password right now because it can't create cookies</Form.Label>
+          <br></br>
+          <Form.Label style={{ color: 'lightgray' }}>(Cause this website isn't HTTPS)</Form.Label>
+
         </Form.Group>
 
-        <Button type='submit' variant='primary' className='mt-3'>
+        <Button type='submit' variant='primary' className='mt-1 '>
           Update
         </Button>
       </Form>
