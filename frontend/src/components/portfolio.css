@@ -1,0 +1,50 @@
+.portfolio {
+  text-align: center;
+  padding: 20px;
+}
+
+.font-weight-bold {
+  font-weight: bold;
+}
+
+.light-gray {
+  color: lightgray;
+}
+
+.mb-4 {
+  margin-bottom: 1.5rem;
+}
+
+/* Projects Section */
+.project-card {
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.project-card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.project-card-title {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.project-card-description {
+  color: black;
+}
+
+/* Skills Section */
+.skills-bar {
+  margin-top: 0.5rem;
+}
+
+.skills-bar .progress-bar {
+  height: 100%;
+  border-radius: 10px;
+}
+
+.no-underline {
+  text-decoration: none;
+}
