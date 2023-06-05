@@ -35,16 +35,35 @@
   color: black;
 }
 
+.no-underline {
+  text-decoration: none;
+}
+
+
 /* Skills Section */
 .skills-bar {
   margin-top: 0.5rem;
+  position: relative;
+  height: 100%;
+  background-color: white;
+  overflow: hidden;
 }
 
 .skills-bar .progress-bar {
   height: 100%;
   border-radius: 10px;
+  background-color: blue;
+  width: 0;
+  transition: width 2s ease-in-out;
+
 }
 
-.no-underline {
-  text-decoration: none;
+@keyframes skillsAnimation {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 100%;
+  }
 }

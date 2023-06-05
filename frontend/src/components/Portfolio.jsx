@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import { Container, Row, Col, Card, ProgressBar } from 'react-bootstrap';
 import "../index.css";
 import "./portfolio.css"; // Import the external CSS file
@@ -28,6 +28,31 @@ const projects = [
 ];
 
 const Portfolio = () => {
+  const skillsRef = useRef([]);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      skillsRef.current.forEach((skillRef) => {
+        const skillElement = skillRef.current;
+        const skillOffsetTop = skillElement.offsetTop;
+        const windowHeight = window.innerHeight;
+        const scrollOffset = window.pageYOffset;
+
+        if (scrollOffset > skillOffsetTop - windowHeight + 100) {
+          const skillRating = parseInt(skillElement.getAttribute('data-rating'));
+          const skillProgress = skillElement.querySelector('.progress-bar');
+          skillProgress.style.width = `${skillRating}%`;
+        }
+      });
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
     <Container className="portfolio">
       <Row>
@@ -64,14 +89,19 @@ const Portfolio = () => {
       <Row>
         <Col>
           <h2>Skills</h2>
-          {skills.map((skill, index) => (
-            <div key={index} className="mb-3 mt-4">
-              <h4>{skill.name}</h4>
-              <div className="skills-bar">
-                <ProgressBar now={skill.rating} label={`${skill.rating}%`} variant="blue"/>
+          {skills.map((skill, index) => {
+            const skillRef = useRef(null);
+            skillsRef.current[index] = skillRef;
+
+            return (
+              <div key={index} className="mb-3 mt-4" ref={skillRef} data-rating={skill.rating}>
+                <h4>{skill.name}</h4>
+                <div className="skills-bar">
+                  <ProgressBar now={0} label={`${skill.rating}%`} variant="blue" />
+                </div>
               </div>
-            </div>
-          ))}
+            );
+          })}
         </Col>
       </Row>
     </Container>
