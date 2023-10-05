@@ -15,14 +15,13 @@ const skills = [
 const projects = [
   {
     title: 'This website',
-    description: `I made this website along with tutorial and <br>host it on Amazon Elastic Compute Cloud or Amazon EC2.<br>`,
+    description: `I made this website along with tutorial and <br>host it on Firebase.<br>`,
     url: 'http://13.230.190.117/',
     image: 'path_to_image_1',
   },
   {
     title: '2D Java Game',
-    description: `I made this 2d game for a term project for ProgTech subject.<br>
-    Check it out <a target="_blank" rel="noopener noreferrer className="no-underline"> : My GitHub</a>`,
+    description: `I made this 2d game for a term project for ProgTech subject.<br>`,
     url: 'https://github.com/Sunioatm/ProgTech-Project-Java2dGame.git',
     image: 'path_to_image_2',
   },
@@ -76,7 +75,7 @@ const Portfolio = () => {
         Welcome to my portfolio!<br />
         My name is Siwakorn Sangiammahasal. I'm a Chulalongkorn University student that just finished the second year with GPAX: 3.25.<br />
         I am a learner web developer with MERN stack.<br />
-        I love to learn about making APIs and data analytics.<br />
+        I love to learn about making backend APIs, data analytics and cyber security.<br />
         <p className="light-gray">Honestly, I love learning mathematics the most, but I don't want to be a teacher.</p>
       </p>
 
