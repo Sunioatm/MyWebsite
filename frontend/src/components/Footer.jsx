@@ -7,10 +7,10 @@ const Footer = () => {
     <footer className="bg-dark text-white mt-5">
       <div className="container py-4">
         <div className="row">
-          <div className="col-lg-4">
+          {/* <div className="col-lg-4">
             <h5>About Me</h5>
             <p>I am eagerly looking forward to gaining internship experience and am excited about the prospect of obtaining real-world knowledge to enhance my skills. Although I don't have prior work experience, I am determined to give my best effort and make the most of this opportunity for personal growth.</p>
-          </div>
+          </div> */}
           <div className="col-lg-4">
             <h5>Contact</h5>
             <ul className="list-unstyled">

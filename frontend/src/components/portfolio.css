@@ -67,3 +67,30 @@
     width: 100%;
   }
 }
+
+/* Certificate Section */
+.certificate-section {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center;     /* Center vertically */
+  flex-wrap: wrap;         /* Allows card items to wrap to next line */
+}
+
+.certificate-card {
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.certificate-card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.certificate-card-title {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.certificate-card-description {
+  color: black;
+}
