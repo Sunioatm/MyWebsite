@@ -6,6 +6,8 @@ import connectDB from './config/db.js';
 import cookieParser from 'cookie-parser';
 import { notFound, errorHandler } from './middleware/errorMiddleware.js';
 import userRoutes from './routes/userRoutes.js';
+import * as functions from 'firebase-functions';
+
 
 const port = process.env.PORT || 5000;
 
@@ -38,4 +40,4 @@ app.use(errorHandler);
 
 app.listen(port, () => console.log(`Server started on port ${port}`));
 
-module.exports.api = functions.https.onRequest(app);
+export const api = functions.https.onRequest(app);
