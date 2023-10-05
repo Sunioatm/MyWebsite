@@ -5,9 +5,9 @@ import "./portfolio.css"; // Import the external CSS file
 
 const skills = [
   { name: 'ChatGPT', rating: 101 },
-  { name: 'Python', rating: 75 },
+  { name: 'Python', rating: 85 },
   { name: 'JavaScript', rating: 70 },
-  { name: 'Java', rating: 70 },
+  { name: 'Java', rating: 65 },
   { name: 'R', rating: 60 },
 ];
 
@@ -26,6 +26,15 @@ const projects = [
     image: 'path_to_image_2',
   },
 ];
+
+const certificates = [
+  {
+    title: "",
+    description: "",
+    url:  "",
+    images: "",
+  }
+]
 
 const Portfolio = () => {
   const skillsRef = useRef([]);
@@ -79,6 +88,22 @@ const Portfolio = () => {
                 <Card.Body>
                   <Card.Title>{project.title}</Card.Title>
                   <Card.Text dangerouslySetInnerHTML={{ __html: project.description }} className='project-card-description'></Card.Text>
+                </Card.Body>
+              </Card>
+            </a>
+          </Col>
+        ))}
+      </Row>
+
+      <h2>Certificates</h2>
+      <Row>
+        {certificates.map((certificate, index) => (
+          <Col md={6} key={index} className="mb-4 mt-4">
+            <a href={certificate.url} target="_blank" rel="noopener noreferrer" className='no-underline'>
+              <Card className="certificate-card" >
+                <Card.Body>
+                  <Card.Title>{certificate.title}</Card.Title>
+                  <Card.Text dangerouslySetInnerHTML={{ __html: certificate.description }} className='certificate-card-description'></Card.Text>
                 </Card.Body>
               </Card>
             </a>
