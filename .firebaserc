@@ -1,5 +1,8 @@
 {
   "projects": {
-    "default": "my-website-portfolio-d582e"
-  }
+    "default": "my-website-portfolio-d582e",
+    "portfolio": "my-website-portfolio-d582e"
+  },
+  "targets": {},
+  "etags": {}
 }
