@@ -16,7 +16,7 @@ const projects = [
   {
     title: 'This website',
     description: `I made this website along with tutorial and <br>host it on Firebase.<br>`,
-    url: 'http://13.230.190.117/',
+    url: "",
     image: 'path_to_image_1',
   },
   {
