@@ -25,6 +25,18 @@ const projects = [
     url: 'https://github.com/Sunioatm/ProgTech-Project-Java2dGame.git',
     image: 'path_to_image_2',
   },
+  {
+    title: "Room Reservation API Project",
+    description: "This is a project for internship assignment about making backend API.",
+    url: "https://github.com/Sunioatm/RoomReservation-API_Project",
+    image: 'path_to_image_3'
+  },
+  {
+    title: "Learn Go Programming",
+    description: "This is go programming for backend",
+    url:"https://github.com/Sunioatm/Learn-GoProgramming",
+    image: 'path_to_image_4'
+  }
 ];
 
 const certificates = [
