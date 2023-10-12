@@ -7,7 +7,8 @@ import TodoBackend from "../assets/certificates/TodoBackend.jpg"
 const skills = [
   { name: 'ChatGPT', rating: 101 },
   { name: 'Python', rating: 80 },
-  { name: 'JavaScript', rating: 70 },
+  { name: 'JavaScript', rating: 75 },
+  { name: "Go", rating:70},
   { name: 'Java', rating: 65 },
   { name: 'R', rating: 65 },
 ];
