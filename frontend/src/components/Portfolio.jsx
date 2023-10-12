@@ -6,10 +6,10 @@ import TodoBackend from "../assets/certificates/TodoBackend.jpg"
 
 const skills = [
   { name: 'ChatGPT', rating: 101 },
-  { name: 'Python', rating: 85 },
+  { name: 'Python', rating: 80 },
   { name: 'JavaScript', rating: 70 },
   { name: 'Java', rating: 65 },
-  { name: 'R', rating: 60 },
+  { name: 'R', rating: 65 },
 ];
 
 const projects = [
@@ -110,6 +110,7 @@ const Portfolio = () => {
       <Row>
         <Col>
           <h2>Skills</h2>
+          <h5><p className='light-gray'>Ranked according to my confidence</p></h5>
           {skills.map((skill, index) => {
             const skillRef = useRef(null);
             skillsRef.current[index] = skillRef;
