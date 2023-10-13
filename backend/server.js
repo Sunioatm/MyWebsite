@@ -6,7 +6,6 @@ import connectDB from './config/db.js';
 import cookieParser from 'cookie-parser';
 import { notFound, errorHandler } from './middleware/errorMiddleware.js';
 import userRoutes from './routes/userRoutes.js';
-import * as functions from 'firebase-functions';
 
 
 const port = process.env.PORT || 5000;
