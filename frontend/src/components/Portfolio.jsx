@@ -3,6 +3,8 @@ import { Container, Row, Col, Card, ProgressBar } from 'react-bootstrap';
 import "../index.css";
 import "./portfolio.css"; // Import the external CSS file
 import TodoBackend from "../assets/certificates/TodoBackend.jpg"
+import DevOps from "../assets/certificates/DevOps.jpg"
+import Pentest from "../assets/certificates/Pentest.jpg"
 
 const skills = [
   { name: 'ChatGPT', rating: 101 },
@@ -47,6 +49,19 @@ const certificates = [
     url:  "",
     images: TodoBackend
   },
+  {
+    title: "DevOps",
+    description: "",
+    url:  "",
+    images: DevOps
+  },
+  {
+    title: "Ethical Hacking, Pentesting",
+    description: "",
+    url:  "",
+    images: Pentest
+  },
+  
 ]
 
 const Portfolio = () => {
