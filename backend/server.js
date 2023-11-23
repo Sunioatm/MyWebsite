@@ -23,7 +23,7 @@ app.use('/api/users', userRoutes);
 
 if (process.env.NODE_ENV === 'production') {
   const __dirname = path.resolve();
-  app.use(express.static('/opt/render/project/src/frontend/dist/index.html'));
+  app.use(express.static('/frontend/dist'));
 
   app.get('*', (req, res) =>
     res.sendFile(path.resolve('frontend', 'dist', 'index.html'))
