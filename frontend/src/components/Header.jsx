@@ -33,7 +33,7 @@ const Header = () => {
           </LinkContainer>
           <Navbar.Toggle aria-controls='basic-navbar-nav' />
           <Navbar.Collapse id='basic-navbar-nav'>
-            <Nav className='ms-auto'>
+            {/* <Nav className='ms-auto'>
               {userInfo ? (
                 <>
                   <NavDropdown title={userInfo.name} id='username'>
@@ -45,7 +45,8 @@ const Header = () => {
                     </NavDropdown.Item>
                   </NavDropdown>
                 </>
-              ) : (
+              ) 
+              : (
                 <>
                   <LinkContainer to='/login'>
                     <Nav.Link>
@@ -59,7 +60,7 @@ const Header = () => {
                   </LinkContainer>
                 </>
               )}
-            </Nav>
+            </Nav> */}
           </Navbar.Collapse>
         </Container>
       </Navbar>
