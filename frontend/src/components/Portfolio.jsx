@@ -18,7 +18,7 @@ const skills = [
 const projects = [
   {
     title: 'This website',
-    description: `I made this website along with tutorial and <br>host it on Render.<br>`,
+    description: `This is my website there's nothing fancy on frontend i'm mostly working with backend and I host it on Render.<br>`,
     url: "",
     image: 'path_to_image_1',
   },
