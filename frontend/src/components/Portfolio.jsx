@@ -18,7 +18,7 @@ const skills = [
 const projects = [
   {
     title: 'This website',
-    description: `This is my website using React on frontend and NodeJS on Backend.<br> And I host it on Render.`,
+    description: `This is my website using React on frontend and NodeJS on Backend.<br> And host it on Firebase.`,
     url: "",
     image: 'path_to_image_1',
   },
