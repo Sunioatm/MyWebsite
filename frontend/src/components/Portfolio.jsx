@@ -8,7 +8,7 @@ import Pentest from "../assets/certificates/Pentest.jpg"
 
 const skills = [
   { name: 'ChatGPT', rating: 101 },
-  { name: 'Python', rating: 80 },
+  { name: 'Python', rating: 75 },
   { name: 'JavaScript', rating: 75 },
   { name: "Go", rating:70},
   { name: 'Java', rating: 65 },
@@ -101,10 +101,9 @@ const Portfolio = () => {
       <h2>About Myself</h2>
       <p className="text-muted">
         Welcome to my portfolio!<br />
-        My name is Siwakorn Sangiammahasal. I'm a Chulalongkorn University student that just finished the second year with GPAX: 3.35.<br />
+        My name is Siwakorn Sangiammahasal. I'm a Chulalongkorn University student with GPAX: 3.33.<br />
         I am a learner web developer with MERN stack.<br />
-        I love to learn about making backend APIs, data analytics and cyber security.<br />
-        <p className="light-gray">Honestly, I love learning mathematics the most, but I don't want to be a teacher.</p>
+        I'm passionate about building backend APIs, automate tasks with DevOps, and enhance my knowledge in cybersecurity.<br />
       </p>
 
       <h2>Projects</h2>
@@ -126,7 +125,7 @@ const Portfolio = () => {
       <Row>
         <Col>
           <h2>Skills</h2>
-          <h5><p className='light-gray'>Ranked according to my confidence</p></h5>
+          <h5><p>(Ranked according to my confidence)</p></h5>
           {skills.map((skill, index) => {
             const skillRef = useRef(null);
             skillsRef.current[index] = skillRef;
