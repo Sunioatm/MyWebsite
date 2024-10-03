@@ -101,7 +101,7 @@ const Portfolio = () => {
       <h2>About Myself</h2>
       <p className="text-muted">
         Welcome to my portfolio!<br />
-        My name is Siwakorn Sangiammahasal. I'm a Chulalongkorn University student with GPAX: 3.33.<br />
+        My name is Siwakorn Sangiammahasal. I'm a Chulalongkorn University student with GPAX: 3.35.<br />
         I am a learner web developer with MERN stack.<br />
         I'm passionate about building backend APIs, automate tasks with DevOps, and enhance my knowledge in cybersecurity.<br />
       </p>
